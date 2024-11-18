@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenesis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="whiteb.png" alt="Care Home Agency Logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="bgcolor" id="backgroundDiv">
+        <!-- Hero Section -->
+
+    </div>
+<section class = "background">
+    
+    <!-- Introduction Section -->
+    <section id="introduction">
+        <h2>About Our Agency</h2>
+        <div class="content-wrapper">
+            <div class="text-content">
+                <p>At Kenesis, we are committed to providing exceptional support to care homes by delivering reliable, certified care professionals whenever you need them. With our 24/7 service, we ensure that your staffing needs are met seamlessly, day or night. Whether it's licensed nurses, skilled carers, or qualified cleaning staff, our team is always ready to step in and provide the care and support your residents deserve.</p>
+                <button>See Recruitment Details</button>
+            </div>
+            <div class="image-content">
+                <img src="241.png" alt="Care Home Agency Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Services Summary (3 ns) -->
+   <!-- Key Services Summary (3 Columns) -->
+   <h1 class="ser">Services</h1>
+<section id="services">
+
+    <a href="nurses.html" class="service-link">
+        <div class="service-item">
+            <h3>Certified Nurses</h3>
+            <p>Experienced, licensed nurses for medical needs.</p>
+            <img src="nurse.png" alt="Nurse Icon" class="service-icon">
+        </div>
+    </a>
+    
+    <a href="cleaning.html" class="service-link">
+        <div class="service-item">
+            <h3>Cleaning Staff</h3>
+            <p>Qualified cleaning staff, based upon your needs</p>
+            <img src="clean.png" alt="Cleaning Icon" class="service-icon">
+        </div>
+    </a>
+    
+    <a href="carers.html" class="service-link">
+        <div class="service-item">
+            <h3>Qualified Carers</h3>
+            <p>Skilled carers for personal care and daily tasks.</p>
+            <img src="carer.png" alt="Carer Icon" class="service-icon">
+        </div>
+    </a>
+    
+    <a href="staffing.html" class="service-link">
+        <div class="service-item">
+            <h3>Flexible Staffing Solutions</h3>
+            <p>Customized staffing for your needs.</p>
+            <img src="staff.png" alt="Staffing Icon" class="service-icon">
+        </div>
+    </a>
+
+</section>
+
+
+    <!-- Call to Action Buttons 
+    <section id="cta-buttons">
+        <a href="contact.html" class="button">Request Staff</a>
+        <a href="about.html" class="button">Learn More About Us</a>
+        <a href="contact.html" class="button">Contact Us</a>
+    </section>-->
+</section>
+<div> <br> </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const serviceItems = document.querySelectorAll(".service-item");
+
+    const scrollAnimation = () => {
+        serviceItems.forEach((item) => {
+            const rect = item.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 100) {
+                item.classList.add("scroll-active");
+            }
+        });
+    };
+
+    window.addEventListener("scroll", scrollAnimation);
+
+    // Initial check for elements already in view
+    scrollAnimation();
+});
+
+</script>
+</body>
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <!-- Quick Links Section -->
+            <div class="footer-section">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Logo and Contact Info Section -->
+            <div class="footer-section logoj">
+                <a href="https://jaesit.com">
+                    <img src="logo1.svg" alt="JAES Solutions Logo"/>
+                </a>
+                <p>Designed by <a href="https://jaesit.com">JAES Solutions</a>, Harlow, UK</p>
+                <p>Email: <a href="mailto:info@jaesit.com">info@jaesit.com</a></p>
+                <p>Phone: <a href="tel:+441279897648">+44 01279 897648</a></p>
+            </div>
+        </div>
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>&copy; 2024 Kenesis. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</html>
